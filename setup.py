@@ -12,6 +12,7 @@ setup(
         'Programming Language :: Python :: 3',
         'License :: OSI Approved :: MIT License',
         'Operating System :: OS Independent',
+        'Intended audience :: Education',
     ],
     python_requires='>=3.6',           # Minimum Python version requirement
 )
