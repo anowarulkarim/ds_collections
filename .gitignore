@@ -1,22 +1,21 @@
-# Ignore Python bytecode files
+# Bytecode files
 __pycache__/
 *.pyc
 *.pyo
 *.pyd
 
-# Ignore virtual environment directories
+# Distribution files (for PyPI)
+dist/
+build/
+*.egg-info/
+
+# Virtual environment folder
 venv/
 env/
 
-# Ignore macOS system files
-.DS_Store
-
-# Ignore Windows system files
-Thumbs.db
-
-# Ignore environment files
+# Environment variables file
 .env
 
-# Ignore pytest cache
-.pytest_cache/
+# MacOS system files
+.DS_Store
 

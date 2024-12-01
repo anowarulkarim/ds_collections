@@ -7,7 +7,7 @@ setup(
     description='Data Structures Collections: BST and Linked Lists.',
     author='Bhuyan Md Anowarul Kairm',                # Replace with your name
     author_email='anowarulkarim8@gmail.com', # Replace with your email
-    url='https://github.com/yourusername/ds_collections', # Replace with your repo URL
+    url='https://github.com/anowarulkarim/ds_collections',
     classifiers=[
         'Programming Language :: Python :: 3',
         'License :: OSI Approved :: MIT License',
