@@ -53,3 +53,18 @@ class SinglyLinkedList:
         prev.next = current.next
         current = None
             
+    def search(self,value):
+        current = self.head
+        while current:
+            if current.data==value:
+                return True
+            current=current.next
+        return False
+    
+    def to_list(self):
+        result=[]
+        current = self.head
+        while current:
+            result.append(current.data)
+            current=current.next
+        return result

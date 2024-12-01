@@ -50,6 +50,7 @@ class BST:
                 inorder(node.left)
                 result.append(node.data)
                 inorder(node.right)
+                
         def preorder(node: Node):
             if node:
                 result.append(node.data) 
