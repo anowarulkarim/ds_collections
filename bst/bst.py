@@ -52,8 +52,8 @@ class BST:
                 inorder(node.right)
         def preorder(node: Node):
             if node:
-                result.append(node.data)  # Visit the current node
-                preorder(node.left)       # Traverse the left subtree
+                result.append(node.data) 
+                preorder(node.left)
                 preorder(node.right) 
 
         def postoder(node:Node):
