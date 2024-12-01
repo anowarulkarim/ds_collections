@@ -43,15 +43,30 @@ class BST:
         else:
             return self.search_recursive(node.right, data)
 
-    def display(self):
+    def display(self,order=None):
         result=[]
         def inorder(node : Node):
             if node:
                 inorder(node.left)
                 result.append(node.data)
                 inorder(node.right)
+        def preorder(node: Node):
+            if node:
+                result.append(node.data)  # Visit the current node
+                preorder(node.left)       # Traverse the left subtree
+                preorder(node.right) 
 
-        inorder(self.root)
+        def postoder(node:Node):
+            if node:
+                postoder(node.left)
+                postoder(node.right)
+                result.append(node.data)
+        if not order:
+            inorder(self.root)
+        elif order=="pre":
+            preorder(self.root)
+        elif order=="post":
+            postoder(self.root)
         return result
 
     def delete(self, data):
